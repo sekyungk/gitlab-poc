@@ -4,7 +4,7 @@ function TempPostPage() {
   const router = useRouter();
   const { id } = router.query;
 
-  return <div>{id}</div>;
+  return <div>{id}aadsf</div>;
 }
 
 export default TempPostPage;
