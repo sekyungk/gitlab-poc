@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "build": "next build && next export",
+    "start": "next build && next export && serve out",
+    "deploy": "serverless"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,9 @@
   "dependencies": {
     "next": "^10.0.7",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "serve": "^11.3.2",
+    "serverless": "^2.28.3"
   },
   "devDependencies": {
     "@types/node": "^14.14.31",
